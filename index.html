@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="C’Freddo — Cuisine, création et applications. Découvrez la Calculatrice de cuisine C’Freddo.">
+  <title>C’Freddo — Site officiel</title>
+
+  <style>
+    :root {
+      --fond: #15191d;
+      --carte: #242a30;
+      --texte: #f5f2ec;
+      --secondaire: #bac1c7;
+      --accent: #dfae67;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--fond);
+      color: var(--texte);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); }
+
+    header {
+      padding: 20px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid #353a3f;
+    }
+
+    .marque {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    nav a {
+      margin-left: 18px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 95px 20px 85px;
+      background: radial-gradient(
+        ellipse at top,
+        #343025 0%,
+        var(--fond) 70%
+      );
+    }
+
+    h1 {
+      font-size: clamp(3rem, 9vw, 5rem);
+      color: var(--accent);
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 0;
+    }
+
+    .signature {
+      font-size: 1.25rem;
+      margin: 10px 0 25px;
+    }
+
+    .intro {
+      color: var(--secondaire);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 20px 24px 70px;
+    }
+
+    section { margin-top: 55px; }
+
+    .carte {
+      background: var(--carte);
+      border: 1px solid #41464b;
+      border-radius: 16px;
+      padding: 32px;
+    }
+
+    .etiquette {
+      color: var(--accent);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .bouton {
+      display: inline-block;
+      border-radius: 8px;
+      padding: 12px 20px;
+      background: var(--accent);
+      color: #171717;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 14px;
+    }
+
+    .indisponible {
+      background: #4b5055;
+      color: #fff;
+      cursor: default;
+    }
+
+    .note {
+      color: var(--secondaire);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      border-top: 1px solid #353a3f;
+      padding: 30px 20px;
+      color: var(--secondaire);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a { margin: 0 8px; }
+
+      .hero { padding: 65px 20px; }
+
+      .carte { padding: 24px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="marque" href="#accueil">C’Freddo</a>
+
+    <nav aria-label="Navigation principale">
+      <a href="#application">Application</a>
+      <a href="#confidentialite">Confidentialité</a>
+      <a href="#english" lang="en">English</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="accueil">
+    <h1>C’Freddo</h1>
+
+    <p class="signature">
+      C’ ce que je suis. C’ ce que je crée.
+    </p>
+
+    <p class="intro">
+      Cuisine, créativité et technologie.
+      Des projets indépendants réunis par une même
+      passion : imaginer, concevoir et créer.
+    </p>
+  </div>
+
+  <main>
+    <section id="application">
+      <div class="carte">
+        <p class="etiquette">Application Android</p>
+
+        <h2>Calculatrice de cuisine C’Freddo</h2>
+
+        <p>
+          Un outil conçu pour accompagner vos
+          préparations culinaires au quotidien.
+        </p>
+
+        <p>
+          Calculatrice, conversions, fractions et
+          minuteurs de cuisine : des outils pratiques
+          réunis dans une seule application.
+        </p>
+
+        <span class="bouton indisponible">
+          Google Play — Bientôt disponible
+        </span>
+
+        <p class="note">
+          Le lien de téléchargement sera activé
+          lors de la publication officielle.
+        </p>
+      </div>
+    </section>
+
+    <section id="confidentialite">
+      <div class="carte">
+        <h2>Confidentialité</h2>
+
+        <p>
+          La Calculatrice de cuisine C’Freddo
+          fonctionne localement, sans publicité
+          ni compte utilisateur.
+        </p>
+
+        <p class="note">
+          Politique de confidentialité française
+          et anglaise : publication prochaine.
+        </p>
+      </div>
+    </section>
+
+    <section id="english" lang="en">
+      <div class="carte">
+        <p class="etiquette">English</p>
+
+        <h2>C’Freddo Kitchen Calculator</h2>
+
+        <p>
+          A practical Android app bringing together
+          calculations, conversions, fractions
+          and kitchen timers.
+        </p>
+
+        <p>
+          Designed to make everyday cooking easier,
+          without advertising or user accounts.
+        </p>
+
+        <span class="bouton indisponible">
+          Google Play — Coming soon
+        </span>
+
+        <p class="note">
+          The English privacy policy will be
+          available here before the app launches.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © C’Freddo — C’ ce que je suis.
+      C’ ce que je crée.
+    </p>
+
+    <p>
+      Contact :
+      <a href="mailto:freddo.cuisine@gmail.com">
+        freddo.cuisine@gmail.com
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
